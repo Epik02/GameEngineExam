@@ -1,0 +1,9 @@
+Part II
+
+1. I was not able to get object pooling implemented in time. Currently when a ghost hits the player it is set to 
+inactive and its mesh is disabled and then it is teleported to a new location. I intended to respawn the disabled 
+ghost when less than 3 ghosts are active. This would optimize the scene because less ghosts would be rendered at a
+time. The meshes of objects are quite taxing on performance in games so we only need to have a few ghosts rendered at
+a time. This also means we do not have to constantly instantiate and destroy objects which also uses a good amount of
+system resources. Another benefit of this approach is since pac man usually only displays about 5 enemies at a time there
+will be no change to the gameplay.
